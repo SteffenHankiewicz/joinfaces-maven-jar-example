@@ -15,6 +15,9 @@ undertow:
   version: @undertow.version@
 application-users:
   users-credentials:
+    - username: goobi
+      password: goobi
+      authorities: ROLE_ADMIN
     - username: persapiens
       password: 123
       authorities: ROLE_ADMIN

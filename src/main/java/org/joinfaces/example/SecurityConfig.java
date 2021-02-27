@@ -16,8 +16,6 @@
 
 package org.joinfaces.example;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
@@ -41,7 +39,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private ApplicationUsers applicationUsers;
 
-	@SuppressFBWarnings("SPRING_CSRF_PROTECTION_DISABLED")
 	@Override
 	protected void configure(HttpSecurity http) {
 		try {
